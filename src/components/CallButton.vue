@@ -1,7 +1,8 @@
 <template>
-    <form action="" @submit="callSomeone()">
+    <form action="" @submit="callSomeone()" class="m-10 ">
       
-        <input type="submit" value="Call">
+       
+        <input type="submit" value="Call" class="p-4">
          
     </form>
    
@@ -25,7 +26,8 @@ export default {
         callSomeone(){
             this.$store.commit("callSomeone",this.callForm)
         }
-    }
+    },
+   
 }
 
 </script>

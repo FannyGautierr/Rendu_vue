@@ -21,7 +21,7 @@ export default createStore({
       }
     ],
 
-    number:[],
+    number:"",
       
     
   },
@@ -29,7 +29,10 @@ export default createStore({
   },
   mutations: {
     addNumber(state,a){
-      state.number.push(a)
+      
+      if(state.number.length<10){
+        state.number+=a
+      }
     },
     submitForm(state,contact){
       state.contacts.push(contact)
@@ -43,7 +46,10 @@ export default createStore({
       appel.date=currentDateWithFormat
       appel.hour=time
       state.journal.push(appel)
-      
+
+    },
+    deleteNumber(state){
+      state.number= state.number.slice(0, -1);
     }
 
   },
