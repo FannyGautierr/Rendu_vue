@@ -5,7 +5,7 @@ export default createStore({
     contacts:[
       {
         name :"Fanny",
-        number:"0763118672"
+        number:"0724569876"
       },
       {
         name :"Lucas",

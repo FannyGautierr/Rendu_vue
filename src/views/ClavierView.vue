@@ -1,21 +1,22 @@
 <template>
 
     <displayNumber />
+
     <div class="personn-name" v-if=" number.length < 11  ">
     <div v-for="(contact, index) in contacts" :key="index" >
-        <div class="personn-name" v-if="contact.number === number" >
+        <div class="flex flex-col gap-4 justify-center items-center" v-if="contact.number === number" >
             <span class="text-white text-2xl border-b-2 m-4">{{contact.name}}</span>
             <CallButton :number="number" :name="contact.name"/>
-            {{ find=true }}
+            <span class="text-gray-900">{{ find=true }}</span>
         </div> 
     
     </div>
 
     </div> 
-    <div v-if="number.length<11 && !find">
-        <span>Inconnu</span>
+    <div v-if="number.length<11 && !find" class="flex flex-col gap-4 justify-center items-center">
+        <span class="text-white text-2xl border-b-2 m-4">Inconnu</span>
         <CallButton :number="number" :name="number"/>
-        {{find=false}} 
+        <span class="text-gray-900">{{ find=false }}</span>
 
     </div>
    
