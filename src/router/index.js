@@ -8,19 +8,15 @@ import ContactForm from '../views/ContactForm.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'clavier',
+    component: ClavierView
   },
   {
     path: '/journal',
     name: 'about',
     component: JournalView
   },
-  {
-    path: '/clavier',
-    name: 'clavier',
-    component: ClavierView
-  },
+
   {
     path: '/contact',
     name: 'contact',
