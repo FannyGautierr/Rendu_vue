@@ -3,6 +3,3 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 
-module.exports = {
-  publicPath: '/Rendu_vue/'
-}
