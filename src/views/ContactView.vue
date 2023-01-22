@@ -1,6 +1,6 @@
 <template>
     <div class="mt-10">
-    <router-link to="/contactForm" class="text-black text-2xl p-2 bg-white">+ Add a new Contact</router-link>
+    <router-link to="/contactForm" class="text-black bg-accent text-2xl p-2">+ Add a new Contact</router-link>
     </div>
     <div class="home">
        

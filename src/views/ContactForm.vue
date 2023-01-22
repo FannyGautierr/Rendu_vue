@@ -1,5 +1,5 @@
 <template>
-<form action="" @submit.prevent="submitForm()" class="flex flex-col justify-items items-center gap-4 p-4 bg-gray-800  w-1/2 m-center mt-10">
+<form action="" @submit.prevent="submitForm()" class="flex flex-col justify-items items-center gap-4 p-4 bg-accent  w-1/2 m-center mt-10">
     <input type="text" placeholder="name" v-model="contactForm.name" class="p-2">
     <input type="tel" placeholder="phone number" v-model="contactForm.number" class="p-2">
 

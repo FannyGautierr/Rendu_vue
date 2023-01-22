@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 html{
-    background-color: rgba(17, 24, 39, 1);
-   
+    background-color: rgb(23 23 23);
+    color: white;
+
 }
